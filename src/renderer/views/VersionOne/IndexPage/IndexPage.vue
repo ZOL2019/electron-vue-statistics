@@ -1,8 +1,18 @@
 <template>
     <div>
-        <el-button @click="incrment_main_counter">+</el-button>
-        <el-button @click="decrement_main_counter">-</el-button>
-        <label>{{Counter}}</label>
+        <el-container>
+            <el-header style="height: 60px">
+                <div>我是标题</div>
+            </el-header>
+            <el-container>
+                <el-aside style="width: 200px">
+                    <div>我是菜单</div>
+                </el-aside>
+                <el-main>
+                    <div>我是内容</div>
+                </el-main>
+            </el-container>
+        </el-container>
     </div>
 </template>
 
@@ -15,21 +25,13 @@
         }
       },
       computed: {
-        Counter () {
-          // 计数器
-          return this.$store.state.Counter.main
-        }
+
       },
       created () {
 
       },
       methods: {
-        decrement_main_counter () {
-          this.$store.dispatch('DECREMENT_MAIN_COUNTER')
-        },
-        incrment_main_counter () {
-          this.$store.dispatch('INCREMENT_MAIN_COUNTER')
-        }
+
       }
     }
 </script>
