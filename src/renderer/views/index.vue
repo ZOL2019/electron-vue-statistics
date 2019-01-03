@@ -3,7 +3,7 @@
 </template>
 
 <script>
-    import IndexPage from './version-1.0/IndexPage/IndexPage'
+    import IndexPage from './VersionOne/IndexPage/IndexPage'
     export default {
       name: 'index',
       components: {IndexPage}
