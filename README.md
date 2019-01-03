@@ -1,6 +1,6 @@
 # electron-vue-statistics
 ## version1.0 目标：
-### 1、集成electron vue element-ui
+### 1、集成electron-vue element-ui
 ### 2、集成node ejexcle等
 ### 3、达到：目标文件解析，文档操作，vuejs学习，nodejs学习，electron学习等目的
 ## version2.0

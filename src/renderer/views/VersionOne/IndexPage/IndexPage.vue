@@ -1,8 +1,8 @@
 <template>
     <div>
-        <button @click="incrment_main_counter">+</button>
-        <button @click="decrement_main_counter">-</button>
-        <div>{{Counter}}</div>
+        <el-button @click="incrment_main_counter">+</el-button>
+        <el-button @click="decrement_main_counter">-</el-button>
+        <label>{{Counter}}</label>
     </div>
 </template>
 
