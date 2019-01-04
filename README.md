@@ -1,7 +1,7 @@
 # electron-vue-statistics
 ## version1.0 目标：
 ### 1、集成electron-vue element-ui
-### 2、集成node ejexcle等
+### 2、集成node ejexcle等 更新：node 去除模板生成方式 尝试使用 原生 js-excel 处理组件
 ### 3、达到：目标文件解析，文档操作，vuejs学习，nodejs学习，electron学习等目的
 ## version2.0
 ### 1、在v1.0基础目标之上完善和优化
