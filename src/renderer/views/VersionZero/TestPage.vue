@@ -7,6 +7,7 @@
 </template>
 
 <script>
+    import xlsx from '../../utils/xlsx'
     export default {
       name: 'TestPage',
       data () {
@@ -21,7 +22,25 @@
         }
       },
       created () {
-
+        const model = xlsx.xlsxtoJson('', 'test')
+        console.error(model.data)
+        console.error(model.data[0])
+        console.error(model.data[1])
+        for (let i = 1; i < model.data.length; i++) {
+          console.error(model.data[i])
+          for (let j = 0; j < model.data[i].length; j++) {
+            console.error(model.data[i][j])
+          }
+        }
+        const data = [{
+          name: null,
+          data: [
+            [null, null, null],
+            [null, null, null],
+            [1, 2, 3]
+          ]
+        }]
+        xlsx.jsontoXlsx('', 'test1', data)
       },
       methods: {
         decrement_main_counter () {
